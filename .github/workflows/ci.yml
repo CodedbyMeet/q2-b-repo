@@ -22,7 +22,7 @@ jobs:
 
       - name: Build and Push Docker Image
         env:
-          IMAGE: ${{ secrets.DOCKER_USERNAME }}/myapp
+          IMAGE: ${{ secrets.DOCKER_USERNAME }}/q2-b-repo
           TAG: ${{ github.sha }}
         run: |
           docker build -t "$IMAGE:latest" -t "$IMAGE:$TAG" ./byte_arcade
