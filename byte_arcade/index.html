@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech Trivia Arcade</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#top">BYTE<span>ARCADE</span></a>
+    <span class="top-tag">MINI GAME · NO DOWNLOADS NEEDED</span>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-badge">✦ QUICK CHALLENGE</div>
+      <h1>Think fast.<br><span>Pick smart.</span></h1>
+      <p>Test your tech knowledge with five bite-sized questions. Choose an answer to reveal instant feedback.</p>
+      <a class="start-button" href="#quiz">Start the quiz <span>↓</span></a>
+      <div class="hero-stats">
+        <div><strong>05</strong><span>Questions</span></div>
+        <div><strong>∞</strong><span>Retries</span></div>
+        <div><strong>0</strong><span>Pressure</span></div>
+      </div>
+      <div class="decor decor-one">0101</div>
+      <div class="decor decor-two">{ }</div>
+    </section>
+
+    <section class="quiz-section" id="quiz">
+      <div class="section-head">
+        <div><span class="eyebrow">THE CHALLENGE</span><h2>Tech Trivia</h2></div>
+        <span class="level">LEVEL 01 / BEGINNER</span>
+      </div>
+      <p class="instructions">Select one answer in each card. Your choice will show whether you're correct. This version uses only HTML and CSS, so you can retry any question whenever you like.</p>
+
+      <article class="question">
+        <div class="question-top"><span class="q-number">01</span><span class="q-category">LINUX</span></div>
+        <h3>Which command lists files in a Linux directory?</h3>
+        <div class="answers">
+          <input type="radio" name="q1" id="q1a"><label for="q1a">mkdir</label>
+          <input type="radio" name="q1" id="q1b"><label for="q1b">ls</label>
+          <input type="radio" name="q1" id="q1c"><label for="q1c">touch</label>
+        </div>
+        <div class="feedback correct f1b">✓ Correct! <code>ls</code> lists directory contents.</div>
+        <div class="feedback wrong f1a">Not quite — <code>mkdir</code> creates directories.</div>
+        <div class="feedback wrong f1c">Not quite — <code>touch</code> creates files or updates timestamps.</div>
+      </article>
+
+      <article class="question">
+        <div class="question-top"><span class="q-number">02</span><span class="q-category">WEB</span></div>
+        <h3>Which language gives a web page its visual styling?</h3>
+        <div class="answers">
+          <input type="radio" name="q2" id="q2a"><label for="q2a">CSS</label>
+          <input type="radio" name="q2" id="q2b"><label for="q2b">SQL</label>
+          <input type="radio" name="q2" id="q2c"><label for="q2c">Bash</label>
+        </div>
+        <div class="feedback correct f2a">✓ Correct! CSS controls layout, colors, spacing, and more.</div>
+        <div class="feedback wrong f2b">Not quite — SQL is used to work with relational data.</div>
+        <div class="feedback wrong f2c">Not quite — Bash is a command-line shell and scripting language.</div>
+      </article>
+
+      <article class="question">
+        <div class="question-top"><span class="q-number">03</span><span class="q-category">DOCKER</span></div>
+        <h3>What is a Docker image?</h3>
+        <div class="answers">
+          <input type="radio" name="q3" id="q3a"><label for="q3a">A running container</label>
+          <input type="radio" name="q3" id="q3b"><label for="q3b">A container template</label>
+          <input type="radio" name="q3" id="q3c"><label for="q3c">A network cable</label>
+        </div>
+        <div class="feedback wrong f3a">Close, but a running container is an instance created from an image.</div>
+        <div class="feedback correct f3b">✓ Correct! An image packages the filesystem and configuration used to create containers.</div>
+        <div class="feedback wrong f3c">Nope — Docker images are software artifacts, not hardware.</div>
+      </article>
+
+      <article class="question">
+        <div class="question-top"><span class="q-number">04</span><span class="q-category">CLOUD</span></div>
+        <h3>In AWS, what does EC2 mainly provide?</h3>
+        <div class="answers">
+          <input type="radio" name="q4" id="q4a"><label for="q4a">Virtual servers</label>
+          <input type="radio" name="q4" id="q4b"><label for="q4b">Email inboxes</label>
+          <input type="radio" name="q4" id="q4c"><label for="q4c">Domain names only</label>
+        </div>
+        <div class="feedback correct f4a">✓ Correct! EC2 provides resizable compute capacity in the cloud.</div>
+        <div class="feedback wrong f4b">Not quite — EC2 is a compute service.</div>
+        <div class="feedback wrong f4c">Not quite — Route 53 is AWS's DNS service.</div>
+      </article>
+
+      <article class="question">
+        <div class="question-top"><span class="q-number">05</span><span class="q-category">GIT</span></div>
+        <h3>Which command downloads a remote Git repository for the first time?</h3>
+        <div class="answers">
+          <input type="radio" name="q5" id="q5a"><label for="q5a">git push</label>
+          <input type="radio" name="q5" id="q5b"><label for="q5b">git status</label>
+          <input type="radio" name="q5" id="q5c"><label for="q5c">git clone</label>
+        </div>
+        <div class="feedback wrong f5a">Not quite — <code>git push</code> sends local commits to a remote.</div>
+        <div class="feedback wrong f5b">Not quite — <code>git status</code> shows the state of your working tree.</div>
+        <div class="feedback correct f5c">✓ Correct! <code>git clone</code> copies a remote repository to your machine.</div>
+      </article>
+
+      <div class="finish-card">
+        <span class="finish-icon">✦</span>
+        <div><h3>Challenge complete?</h3><p>Review your answers above, then try again. Your choices can be changed at any time.</p></div>
+        <a href="#quiz">Play again ↑</a>
+      </div>
+      <p class="fine-print">Built with HTML and CSS only. Feedback is per question; automatic scoring and a global timer would require JavaScript.</p>
+    </section>
+  </main>
+  <footer><span class="brand">BYTE<span>ARCADE</span></span><span>Small games. Big brain energy.</span></footer>
+</body>
+</html>
